@@ -1,7 +1,4 @@
-FROM amazoncorretto:17
-
-WORKDIR /app
-
-COPY target/*.jar app.jar
-
-CMD ["java", "-jar", "app.jar"]
+FROM nginx:latest
+COPY index.html /usr/share/nginx/html/
+COPY style.css /usr/share/nginx/html/
+EXPOSE 80
