@@ -6,7 +6,7 @@ pipeline {
         stage('Checkout') {
             steps {
                 git credentialsId: 'git-cred',
-                    url: 'https://github.com/shaikhaseena18/mypoc2',
+                    url: 'https://github.com/shaikhaseena18/mypoc2.git',
                     branch: 'main'
             }
         }
